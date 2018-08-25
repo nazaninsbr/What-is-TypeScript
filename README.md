@@ -9,4 +9,6 @@ you can convert the `.ts` files to `.js` using the following command:
 tsc file_name.ts
 # Initializes a watcher process that will keep main.js up to date.
 tsc file_name.ts --watch
+# tell TypeScript that we are building modules for require.js  as opposed ot commonJS (use it inside the modules folder)
+tsc --module amd *.ts
 ```
